@@ -1,0 +1,491 @@
+html {
+   scroll-behavior: smooth;
+   scroll-padding-top: 50px;
+}
+body {
+   font-size: 100%;
+   margin: 0;
+   color: #fdf9f9;
+   font-family: sans-serif;
+   text-align: left;
+   background: #393636;
+}
+
+/* #region --------- colors ------------------ */
+h3, header, h2, hr, nav, footer, button.dropdown, li a, .dropdown-content a, a.nav, .tlContent, .tlContentR, div.skilltext, .hobbyalt {
+   color: #fdf9f9;
+}
+.hobbyitem, h2.hobby, h3.skilltitle, button.dropdown:hover, .dropdown-content a, .dropdown-content a:hover, li a:hover, a.nav:hover, h2.aboutme, span.circle, div.skills, div#aboutmeL, div#aboutmeR {
+   color: #393636;
+}
+h4, h2.hobbyalt {
+   color: #cdf8b9;
+}
+button.dropdown:hover, .dropdown-content, li a:hover, a.nav:hover, section#aboutme, div.skillitem, .tlDot, .tlDotR, .hobbyitem {
+   background-color: #cdf8b9;
+}
+section, #timeline, #skills, nav, footer, button.dropdown, .hobbyalt {
+   background-color: #393636;
+}
+.dropdown-content a:hover, span.circle {
+   background-color: #fdf9f9;
+}
+/* #endregion */
+/* #region --------- Header styles ----------- */
+header {
+   min-height: 15%;
+   text-align: center;
+}
+h1 {
+   font-size: 4.5rem;
+   font-family: 'Josefin Slab', serif;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 10% 6% 1% 6%;
+}
+h2.subtitle {
+   font-size: 1.3rem;
+   padding: 0 6% 0 6%;
+}
+p.subtitle {
+   padding: 0 6% 5% 6%;
+}
+hr {
+   width: 60%;
+   margin-bottom: 5%;
+}
+/* #endregion */
+/* #region --------- Nav styles -------------- */
+nav, footer, button.dropdown {
+   height: 3.2rem;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   width: 100%;
+}
+nav {
+   position: fixed;
+   top: 0;
+   z-index: 5;
+}
+div.dropdown {
+   display: none;
+   min-width: 120.05px;
+   float: right;
+}
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+button.dropdown {
+   position: relative;
+   display: inline-block;
+   border: 0;
+   cursor: pointer;
+   text-align: right;
+   font-size: 1rem;
+   padding: 1rem 20px;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 80px;
+   text-align: center;
+   z-index: 1;
+}
+div.navright {
+   float: right;
+   width: 50%;
+   margin: 0 14% 0 0;
+}
+div.navleft {
+   float: left;
+   width: 22%;
+   margin: 0 0 0 14%;
+}
+ul {
+text-align: right;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+li {
+   display: inline-block;
+   margin: 0;
+}
+li a, .dropdown-content a, a.nav {
+   display: block;
+   padding: 1.02rem 20px;
+   text-decoration: none;
+   margin: 0;
+}
+li a, .dropdown-content a {
+   cursor: pointer;
+}
+footer {
+   padding-top: 0.312em;
+}
+/* #endregion */
+/* #region --------- CONTENT ----------------- */
+   /* #region ------ Aboutme stuff ----------- */
+h2.aboutme {
+   padding: 0;
+   margin: 1.5rem 0 2rem 3.5rem;
+}
+div#aboutmeL {
+   margin: 5% 2rem 8% 20%;
+   padding: 0;
+   background-color: transparent;
+   width: 20%;
+   float: left;
+}
+div#aboutmeR {
+   padding: 0;
+   width: 30%;
+   float: right;
+   margin: 10% 20% 8% 2rem;
+   font-size: 1.2rem;
+}
+section#aboutme {
+   width: 100%;
+}
+   /* #endregion aboutme stuff */
+   /* #region ------ Timeline stuff -----------*/
+.tlDot, .tlDotR {
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   float: left;
+   margin-left: 14%;
+   margin-top: -15px;
+   z-index: 1;
+   content: "";
+}
+.tlDotR {
+   float: right;
+   margin-right: 10%;
+}
+.tlDot::after, .tlDotR::after {
+   content: " ";
+   position: absolute;
+   background-color: #393636;
+   border: 2px solid;
+   border-color: #cdf8b9 transparent transparent #cdf8b9;
+   transform: rotate(45deg);
+   border-radius: 3px;
+   width: 25px;
+   height: 25px;
+   margin-top: 42px;
+   z-index: 2;
+
+}
+.tlContent, .tlContentR {
+   padding: 30px;
+   border: 2px solid #cdf8b9;
+   border-radius: 10px;
+   position: relative;
+   background-color: #393636;
+   width: 28%;
+   z-index: 1;
+   float: left;
+   margin-left: -13%;
+   margin-right: 1px;
+   margin-top: 40px;
+}
+.tlContentR {
+   float: right;
+   margin-right: -21.5%;
+   margin-left: 1px;
+}
+.timeline1, .timeline2 {
+   width: 60%;
+   height: 300px;
+   border: solid;
+}
+.timeline1 {
+   margin: 15px 0 0 22%;
+   border-width: 5px 5px 4px 5px;
+   border-color: #cdf8b9 #cdf8b9 #cdf8b9 transparent;
+   border-radius: 0 45px 45px 0;
+}
+.timeline2 {
+   margin: -4px 0 0 18%;
+   border-width: 4px 5px 5px 5px;
+   border-color: #cdf8b9 transparent #cdf8b9 #cdf8b9;
+   border-radius: 45px 0 0 45px;
+}
+.tlStraight {
+   display: none;
+   width: 80%;
+   border: 5px solid;
+   border-color: transparent transparent transparent #cdf8b9;
+   min-height: 500px;
+   margin: 8% 0 0 10%;
+}
+/* #endregion --- timeline stuff end --- */
+   /* #region ------ Skill stuff ------------- */
+div.skills {
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   margin-bottom: 14rem;
+}
+.skillbox {
+   margin: 0 0 20px 0;
+}
+div.skillitem {
+   width: 14rem;
+   height: 12rem;
+   margin: 0 5px 130px 0;
+   padding: 1.5rem 1rem;
+   text-align: center;
+   display: inline-block;
+   border-radius: 8px 8px 0 0;
+   vertical-align: top;
+}
+div.skilltext {
+   position: relative;
+   text-align: center;
+   font-size: 1rem;
+   padding: 1.5rem 1rem;
+   width: 13.8rem;
+   min-height: 6rem;
+   margin: 0 0 0 -16px;
+   background-color: #393636;
+   border: 2px solid #cdf8b9;
+   border-radius: 0 0 8px 8px;
+}
+.skilltop {
+   height: 180px;
+   padding: 0 0 10px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.skilltitle {
+   margin: 0;
+   padding: 0;
+}
+.skilltext-line {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   text-align: left;
+   margin: 0 0 0 20px;
+}
+.icon-bullet {
+   font-size: 0.3rem;
+   padding: 0;
+   margin: 0 8px 0 0;
+}
+.skill-icon {
+   font-size: 80px;
+   margin: 0;
+   padding: 0;
+}
+   /* #endregion skill stuff */
+   /* #region ------ Hobby stuff ------------- */
+#hobbies {
+   width: 100%;
+   margin: 0;
+   margin-bottom: 14rem;
+}
+div.hobbyitem, div.hobbyalt {
+   width: 70%;
+   min-height: 20rem;
+   margin: 0 0 10px 15%;
+   padding: 2rem 0;
+   display: inline-block;
+   font-size: 1rem;
+   border: 2px solid #cdf8b9;
+   border-radius: 16px;
+}
+div.gallery {
+   margin: 0 0 0 7%;
+   display: inline-block;
+}
+div.gallery2 {
+   margin: 0 0 0 5%;
+}
+.hobbyB {
+   width: 80%;
+   margin: 0 0 4% 10%;
+}
+.hobbyR {
+   width: 40%;
+   margin: 0 10% 5px 5px;
+   display: block;
+   float: right;
+}
+.hobbyB, .hobbyR {
+   font-size: 1rem;
+}
+h2.hobby, h2.hobbyalt {
+   margin: 0 0 5% 20%;
+   padding: 0;
+   text-align: left;
+   font-size: 1.3rem;
+}
+img.hobby, img.craft, img.art, img.game {
+   width: 23%;
+   height: auto;
+   margin: 0 0 8% 14%;
+   padding: 0;
+   border-radius: 20px;
+}
+img.art {
+   aspect-ratio: 1 / 1;
+   object-fit: cover;
+}
+img.hobby:hover, img.craft:hover, img.art:hover, img.game:hover {
+   scale: 105%;
+   transition: 400ms;
+}
+img.hobby:not(hover), img.craft:not(hover), img.art:not(hover), img.game:not(hover) {
+   scale: auto;
+   transition: 600ms;
+}
+img.game {
+   width: 30%;
+}
+img.art, img.game {
+   margin: 0 2px;
+}
+/* #endregion hobby stuff */
+   /* #region ------ Footer stuff ------------ */
+ul.footer {
+   text-align: center;
+   margin: 0;
+   font-size: 1.1rem;
+}
+li.footer {
+   margin: 0 2% 4% 2%;
+   color: #cdf8b9;
+}
+li.footer:hover {
+   color: #fdf9f9;
+}
+li.footer > i {
+   font-size: 20px;
+   cursor: pointer;
+}
+a > i {
+   font-size: 20px;
+   padding: 0;
+   margin: 0;
+   background-color: transparent;
+   color: #cdf8b9;
+}
+a.cv:hover {
+   color: #fdf9f9;
+   background-color: transparent;
+}
+a:hover > i {
+   color: #fdf9f9;
+}
+   /* #endregion footer */
+i {
+font-size: 700%;
+padding: 40px 0;
+}
+h2 {
+   padding: 6rem 0 3rem 20%;
+}
+h3 {
+   margin: 0;
+   font-size: 1.2rem;
+}
+h4 {
+   margin: 0 0 5px 0;
+   font-size: 1rem;
+}
+img {
+   margin: 0;
+   height: 16rem;
+   width: 16rem;
+   border-radius: 50%;
+   display: inline-block;
+}
+section, #timeline, #skills {
+   width: 100%;
+   min-height: 20em;
+   margin: 0 0;
+   padding: 0;
+   display: inline-block;
+   overflow: hidden;
+}
+/* #endregion all content */
+/* #region -------- Small window layout styles */
+@media only screen and (max-width: 900px) {
+   nav ul {
+      display: none;
+   }
+   div.dropdown {
+      display: block;
+   }
+   a.nav {
+      width: 100%;
+   }
+   div#aboutmeL, div#aboutmeR {
+      width: 80%;
+      float: none;
+      text-align: justify;
+      padding: 0;
+      margin: 80px 0 8% 10%;
+   }
+   div#aboutmeL {
+      text-align: center;
+   }
+   h2.aboutme {
+      margin: 3% 0;
+   }
+   .timeline1, .timeline2 {
+      display: none;
+   }
+   .tlStraight {
+      display: block;
+   }
+   .tlDot, .tlDotR {
+      float: left;
+      margin-left: -17px;
+      margin-top: 40px;
+   }
+   .tlDot::after, .tlDotR::after {
+      border-color: transparent transparent #cdf8b9 #cdf8b9;
+      margin-left: 50px;
+      margin-top: 0;
+      z-index: 2;
+   }
+   .tlContent, .tlContentR {
+      padding: 30px;
+      position: relative;
+      width: 80%;
+      float: none;
+      margin: 0 0 20px 46px;
+   }
+   img.hobby, img.craft {
+      width: 70%;
+      float: none;
+      text-align: justify;
+      padding: 0;
+      margin: 80px 0 8% 14.5%;
+   }
+   .hobbyR {
+      width: 80%;
+      margin: 0 0 5px 10%;
+      display: block;
+      float: none;
+      text-align: justify;
+   }
+   img.game, img.art {
+      width: 80%;
+      margin: 2% 0 2% 7%;
+   }
+}
+@media only screen and (max-width: 515px) {
+   header {
+      margin-top: 10%;
+   }
+}
+/* #endregion */

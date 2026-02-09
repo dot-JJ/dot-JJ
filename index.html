@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/485372edbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+    <title>Jenny Jokela - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web portfolio">
+    <meta name="author" content="Jenny Jokela">
+    <meta name="keywords" content="Portfolio, Web development, Web portfolio">
+</head>
+<body>
+    <nav>
+        <!-- navbar left side content -->
+        <div class="navleft">
+            <a class="nav" href="#">Jenny Jokela</a>
+        </div>
+        <!-- navbar right side content -->
+        <div class="navright">
+            <ul>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#timeline">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+            <!-- dropdown menu when window too small -->
+            <div class="dropdown">
+                <button class="dropdown">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#aboutme">About me</a>
+                    <a href="#timeline">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#">To top</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>Jenny Jokela</h1>
+        <h2 class="subtitle">Information and Communication Technology Engineer</h2>
+        <p class="subtitle">in training</p>
+    </header>
+    <hr> <!-- Horizontal rule.. self explanitory -->
+    <!-- content starts -->
+    <section id="aboutme">
+        <div id="aboutmeL"> <!-- Left side of aboutme section -->
+            <h2 class="aboutme">About me</h2>
+            <img src="images/pfp.jpg" alt="Profile image">
+        </div>
+        <div id="aboutmeR"> <!-- Right side of aboutme section -->
+            I am Jenny Jokela, a twenty-something year old engineering student in Jamk University of Applied Sciences.
+            Though I have yet to finish even my first year of studies, I'd say I've racked up a decent amount of skills, some of which
+            being web development, Python programming and the basics of Linux.
+            <br><br>
+            My interests mainly lie in programming and development. Having an adequate understanding
+            of the thing I'm trying to achieve is nice and all, but even without it, I am always
+            determined to research and figure out ways to solve problems one way or another.
+            Creativity is a strong suit of mine, and I particularly enjoy tasks that allow me to utilize
+            my creativity in different ways.
+        </div>
+    </section>
+    <section id="timeline">
+        <h2>Experience</h2>
+        <!-- curved timeline -->
+            <div class="timeline1">
+                <div class="tlDot"></div>
+                <div class="tlContent">
+                    <h3>2018-2020</h3>
+                    <h4>Vocational Upper Secondary School Lappia</h4>
+                    Dual qualification education in media, unfinished.
+                </div>
+                <div class="tlDotR"></div>
+                <div class="tlContentR">
+                    <h3>2021-2022</h3>
+                    <h4>Jyväskylä Upper Secondary School for Adults</h4>
+                    Finished upper secondary education and completed matriculation examinations.
+                </div>
+            </div>
+            <div class="timeline2">
+                <div class="tlDot"></div>
+                <div class="tlContent">
+                    <h3>2023 - present</h3>
+                    <h4>JAMK</h4>
+                    Studying to become an information and communication technology engineer.
+                </div>
+                <div class="tlDotR"></div>
+                <div class="tlContentR">
+                    <h3>2023 - present</h3>
+                    <h4>Hotel Verso</h4>
+                    Working as a hotel cleaner.
+                </div>
+            </div>
+        <!-- straight timeline for small window -->
+        <div class="tlStraight">
+            <div class="tlDot"></div>
+            <div class="tlContent">
+                <h3>2018-2020</h3>
+                <h4>Vocational Upper Secondary School Lappia</h4>
+                Dual qualification education in media, unfinished.
+            </div>
+            <div class="tlDotR"></div>
+            <div class="tlContentR">
+                <h3>2021-2022</h3>
+                <h4>Jyväskylä Upper Secondary School for Adults</h4>
+                Finished upper secondary education and completed matriculation examinations.
+            </div>
+            <div class="tlDotR"></div>
+            <div class="tlContentR">
+                <h3>2023 - present</h3>
+                <h4>Hotel Verso</h4>
+                Working as a hotel cleaner.
+            </div>
+            <div class="tlDot"></div>
+            <div class="tlContent">
+                <h3>2023 - present</h3>
+                <h4>JAMK</h4>
+                Studying to become an information and communication technology engineer.
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Web development</h3>
+                    <i class="fa-solid fa-network-wired skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>HTML/CSS (+Bootstrap)<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>React<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>Node.js/Express.js<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>MongoDB<br>
+                    </div>
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Programming languages</h3>
+                    <i class="fa-brands fa-python skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>Python<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>JavaScript<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>TypeScript<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>C# (.NET)<br>
+                    </div>
+                    <div class="skilltext-line">
+                        <i class="fa-solid fa-circle icon-bullet"></i>Minor experience with C
+                    </div> 
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Mobile development</h3>
+                    <i class="fa-solid fa-mobile skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I have experience in Expo/React Native and Android based mobile application development.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">API / Web UI</h3>
+                    <i class="fa-solid fa-circle-nodes skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I am familiar with API usage, especially in web UI development.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Web Application Security</h3>
+                    <i class="fa-solid fa-shield-halved skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I have knowledge of common security vulnerabilities, how they are exploited and what can be done to mitigate them.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Auditing | Penetration testing</h3>
+                    <i class="fa-solid fa-flask-vial skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I am familiar with analyzing applications and networks, and using tools to decrypt and decipher data.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Data analytics, ML</h3>
+                    <i class="fa-solid fa-diagram-project skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I've used Python in analyzing data and machine learning.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Linux/Ubuntu</h3>
+                    <i class="fa-brands fa-linux skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I am familiar with Linux commands and running linux based VMs.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Docker</h3>
+                    <i class="fa-brands fa-docker skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    I have some knowledge on Docker and running Docker containers.
+                </div>
+            </div>
+            <!-- end skill -->
+            <!-- skill -->
+            <div class="skillitem">
+                <div class="skilltop">
+                    <h3 class="skilltitle">Spoken languages</h3>
+                    <i class="fa-solid fa-language skill-icon"></i>
+                </div>
+                <div class="skilltext">
+                    Finnish: Native<br>
+                    English: B2 - C1 level<br>
+                    Swedish: A2 - B1 level
+
+                </div>
+            </div>
+            <!-- end skill -->
+        </div>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbyitem"> <!-- first hobby -->
+            <h2 class="hobby">Knitting/crocheting</h2>
+            <img class="hobby" src="images/knit.jpg" alt="Yarn">
+            <div class="hobbyR">
+                My hobbies include many kinds of crafts, a few of which being knitting and crocheting.
+                It's actually kind of difficult to explain why I like such things so much - I suppose
+                the ability to create something, particularly something useful, is somewhat satisfying,
+                not to mention how satisfying it is to simply see your own handiwork and notice how
+                much you've improved.<br><br>Following instructions is not particularly difficult for me,
+                but I can't deny sometimes preferring to just wing it most of the time, testing and redoing
+                projects until they turn out how I want them to.
+            </div>
+        </div>
+        <div class="hobbyalt"> <!-- second hobby -->
+            <h2 class="hobbyalt">Crafts</h2>
+            <img class="craft" src="images/craft.jpg" alt="Crafts">
+            <div class="hobbyR">
+                Aside from knitting and crocheting, I also enjoy all other sorts of crafts, such as
+                sewing or paper crafts. Particularly, I love creating miniatures and small scale
+                versions of everyday things, perhaps due to the convenience of being able to work
+                on them easily in the small space of my room, as well as due to the amount of materials
+                they need. It is certainly a lot cheaper to make a 1/12 scale dress than it is to
+                make a full scale one.
+            </div>
+        </div>
+        <div class="hobbyitem"> <!-- third hobby -->
+            <h2 class="hobby">Video games</h2>
+            <div class="hobbyB">
+                A lot of my free time is naturally spent on games. I particularly like games that
+                let you build and be creative, such as the games pictured above.
+                <br><br>
+                OpenTTD, Stardew Valley and The Sims 4 are just a few of the games I enjoy playing in my
+                free time, but you can perhaps notice some similarities between these titles. Particularly,
+                the ability to utilize one's creativity is present in most of the games I play.
+                I enjoy the freedom of being able to customize my game and decide how I want to play it,
+                as well as how I want it to look. You can see two of the aforementioned titles have quite
+                the simple graphics - I can't deny having a soft spot for more 8-bit style games.
+            </div>
+            <div class="gallery">
+                <img class="game" src="images/openttd.jpg" alt="Screenshot of OpenTTD">
+                <img class="game" src="images/stardew.jpg" alt="Screenshot of Stardew Valley">
+                <img class="game" src="images/sims.jpg" alt="Screenshot of The Sims 4">
+            </div>
+        </div>
+        <div class="hobbyalt"> <!-- fourth hobby -->
+            <h2 class="hobbyalt">Art</h2>
+            <div class="hobbyB">
+                I've been drawing for well over 10 years now and am entirely self-taught.
+                While I do enjoy traditional methods such as acrylic paints and drawing with a pencil,
+                my main medium currently is digital art. I particularly enjoy being able to use
+                bright colors and apply all kinds of effects that traditional art doesn't allow for.
+            </div>
+            <div class="gallery2">
+                <img class="art" src="images/art1.jpg" alt="Drawing">
+                <img class="art" src="images/art2.jpg" alt="Drawing">
+                <img class="art" src="images/art3.jpg" alt="Drawing">
+                <img class="art" src="images/art4.jpg" alt="Drawing">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h4>Contacts</h4>
+        <br>
+        <hr>
+        <br>
+        <ul class="footer">
+            <li class="footer">AE8691@student.jamk.fi</li>
+            <li>|</li>
+            <li class="footer"><a class="cv" href="files/CV_Jenny_Jokela_protected.pdf" target="_blank"><i class="fa-solid fa-file" title="CV"></i></a></li>
+            <li>|</li>
+            <li class="footer"><i class="fa-brands fa-linkedin" title="To be added"></i></li>
+        </ul>
+    </footer>
+</body>
+</html>
